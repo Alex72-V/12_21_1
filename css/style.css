@@ -4,13 +4,26 @@
     --pink-text: #F1808F
 }
 
-.body {
+body {
     font-family: 'Lato';
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
 
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .container {
@@ -64,6 +77,7 @@
 
 .brand {
     display: flex;
+    margin: 0 0 63px;
 }
 
 .brand__img {}
@@ -92,4 +106,56 @@
 
 .brand__sub-title-pink {
     color: var(--pink-text);
+}
+
+.sales__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sales__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales__item--women {
+    background-image: url(../img/sales_women.jpg);
+
+}
+
+.sales__item-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.sales__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--pink-text);
+    text-transform: uppercase;
+}
+
+.sales__item--men {
+    background-image: url(../img/sales_men.jpg);
+
+}
+
+.sales__item--kids {
+    background-image: url(../img/sales_kids.jpg);
+}
+
+.sales__item--accesories {
+    background-image: url(../img/sales_accesories.jpg);
+    width: 100%;
+    min-height: 180px;
+    margin: 30px 0 0 0;
+
 }
