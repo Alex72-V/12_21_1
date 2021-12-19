@@ -6,57 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop_002</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <img class="header__logo" src="./img/logo.svg" alt="logo">
-        <img class="header__search" src="./img/loupe.svg" alt="loupe">
-        <button class="header__button" type="button">
-            <img src="./img/burger.svg" alt="burger">
-        </button>
-        <a class="header__link" href="#"><img src="./img/person.svg" alt="person">person</a>
-        <a class="header__link" href="#"><img src="./img/basket.svg" alt="basket">basket</a>
-        <nav class="header__menu">
-            <h2 class="header__menu-title">menu</h2>
-            <ul class="header__menu-list">
-                <li class="header__menu-item menu-sub-item">
-                    <h3 class="menu-sub-item__title">man</h3>
-                    <ul class="menu-sub-item__list">
-                        <li><a class="menu-sub-item__item-link" href="#">Accessories</a></li>
-                        <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
-                        <li><a class="menu-sub-item__item-link" href="#">Denim</a></li>
-                        <li><a class="menu-sub-item__item-link" href="#">T-Shirts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>woman</h3>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>kids</h3>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Bags</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header__wrp">
+                <div>
+                <img class="header__logo" src="./img/logo.svg" alt="logo">
+                <img class="header__search" src="./img/loupe.svg" alt="loupe">
+                </div>
+                <div class="header__nav-group">
+                 <button class="header__button"            type="button">
+                    <img src="./img/burger.svg" alt="burger">
+                 </button>
+                 <a class="header__link" href="#"><img src="./img/person.svg"   alt="person">person</a>
+                 <a class="header__link" href="#"><img src="./img/basket.svg" alt="basket">basket</a>
+                  <nav class="header__menu">
+                     <h2 class="header__menu-title">menu</h2>
+                     <ul class="header__menu-list">
+                         <li class="header__menu-item menu-sub-item">
+                             <h3 class="menu-sub-item__title">man    </h3>
+                             <ul class="menu-sub-item__list">
+                              <li><a class="menu-sub-item__item-link" href="#">Accessories</a></li>
+                              <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
+                              <li><a class="menu-sub-item__item-link" href="#">Denim</a></li>
+                              <li><a class="menu-sub-item__item-link"        href="#">T-Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                              <h3>woman</h3>
+                              <ul>
+                                  <li><a href="#">Accessories</a></li>
+                                   <li><a href="#">Jackets & Coats</a></li>
+                                   <li><a href="#">Polos</a></li>
+                                  <li><a href="#">T-Shirts</a></li>
+                                  <li><a href="#">Shirts</a></li>
+                              </ul>
+                        </li>
+                         <li>
+                                <h3>kids</h3>
+                                <ul>
+                                  <li><a href="#">Accessories</a></li>
+                                  <li><a href="#">Jackets & Coats</a></li>
+                                  <li><a href="#">Polos</a></li>
+                                  <li><a href="#">T-Shirts</a></li>
+                                  <li><a href="#">Shirts</a></li>
+                                  <li><a href="#">Bags</a></li>
+                                </ul>
+                           </li>
+                       </ul>
+                   </nav>
+              </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <img src="./img/man.jpg" alt="man">
-            <h1>the brand of luxerious fashion</h1>
+        <section class="brand">
+            <img class="brand__img" src="./img/man.jpg" alt="man" width="800" height="765">
+            <div class="brand__title-wrp">
+             <h1 class="brand__title">the brand <span class="brand__sub-title"> of luxerious <span class="brand__sub-title-pink"> fashion </span></span></h1>
+            </div>
         </section>
         <section>
             <h2>sales</h2>
