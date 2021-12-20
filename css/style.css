@@ -40,7 +40,7 @@ body {
     margin: 0 41px 0 0;
 }
 
-.header__search {}
+
 
 .header__button {
     background-color: transparent;
@@ -81,7 +81,6 @@ body {
     margin: 0 0 63px;
 }
 
-.brand__img {}
 
 .brand__title-wrp {
     display: flex;
@@ -264,4 +263,69 @@ body {
     font-weight: 300;
     text-align: center;
     color: #FBFBFB;
+}
+
+.footer__subscribe {
+    display: flex;
+    min-height: 448px;
+    background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.footer__subscribe-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footer__subscribe-wrp {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer__subscribe-img {
+    width: 20%;
+}
+
+.footer__subscribe-img-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+.footer__subscribe-img-text--italic {
+    font-style: italic;
+}
+.footer__subscribe-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+}
+.footer__subscribe-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 0 32px 0;
+ 
+}
+.footer__subscribe-input {
+    min-height: 49px;
+    width: 70%;
+    background: #E1E1E1;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+
+.footer__subscribe-button {
+    border-radius: 0 25px 25px 0;
+    min-height: 55px;
+    margin: 0 -12px 0 0;
+    width: 30%;
+    background-color: var(--pink-text);
+    border: none;
 }
