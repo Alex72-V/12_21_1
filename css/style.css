@@ -11,7 +11,6 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
-
 }
 
 .visually-hidden {
@@ -39,8 +38,6 @@ body {
 .header__logo {
     margin: 0 41px 0 0;
 }
-
-
 
 .header__button {
     background-color: transparent;
@@ -80,7 +77,6 @@ body {
     display: flex;
     margin: 0 0 63px;
 }
-
 
 .brand__title-wrp {
     display: flex;
@@ -188,7 +184,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 30px 0 0 0;
-
 }
 
 .products__item-img {
@@ -229,25 +224,26 @@ body {
     align-items: center;
     color: #F26376;
     margin: 48px 0 96px 0;
-
 }
 
 .advantages {
-
     background-color: var(--black);
 }
+
 .advantages__list {
     min-height: 341px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .advantages__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 40px;
 }
+
 .advantages__img {
     max-height: 40px;
     margin: 0 0 26px 0;
@@ -259,6 +255,7 @@ body {
     color: #FBFBFB;
     margin: 0 0 16px 0;
 }
+
 .advantages__item-text {
     font-weight: 300;
     text-align: center;
@@ -273,12 +270,14 @@ body {
     background-position: top;
     background-size: cover;
 }
+
 .footer__subscribe-div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
+
 .footer__subscribe-wrp {
     width: 35%;
     display: flex;
@@ -286,6 +285,7 @@ body {
     align-items: center;
 
 }
+
 .footer__subscribe-img {
     width: 20%;
 }
@@ -296,9 +296,11 @@ body {
     text-align: center;
     margin: 24px 0 0 0;
 }
+
 .footer__subscribe-img-text--italic {
     font-style: italic;
 }
+
 .footer__subscribe-title {
     font-weight: 700;
     font-size: 24px;
@@ -306,6 +308,7 @@ body {
     text-transform: uppercase;
 
 }
+
 .footer__subscribe-text {
     font-size: 18px;
     line-height: 30px;
@@ -313,6 +316,7 @@ body {
     margin: 0 0 32px 0;
  
 }
+
 .footer__subscribe-input {
     min-height: 49px;
     width: 65%;
@@ -342,7 +346,6 @@ background-color: var(--black);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer__copyright-text {
@@ -355,6 +358,7 @@ background-color: var(--black);
     display: flex;
     justify-content: space-around;
 }
+
 .footer__copyright-item {
     margin: 0 7px 0 0;
 }
