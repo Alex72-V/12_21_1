@@ -59,6 +59,7 @@ label, input {
     align-items: center;
 }
 
+
 .header__menu {
     display: none;
 }
@@ -88,6 +89,17 @@ label, input {
     padding: 0 0 0 92px;
     background-color: var(--pink-bkg);
     flex-grow: 1;
+
+    position: relative;
+} 
+
+.brand__title-wrp::before {
+  content: '';
+  width: 12px;
+  height: 92px;
+  background: var(--pink-text);
+  position: absolute;
+  margin: 0 0 0 -16px;
 }
 
 .brand__title {
@@ -228,6 +240,14 @@ label, input {
     align-items: center;
     color: #F26376;
     margin: 48px 0 96px 0;
+}
+
+.products__button:hover,
+.products__button:focus {
+  background-color: var(--pink-text);
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
 }
 
 .advantages {
