@@ -13,10 +13,12 @@ body {
     line-height: 17px;
 }
 
-label, input {
+label,
+input {
     display: block;
     display: flex;
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -91,15 +93,15 @@ label, input {
     flex-grow: 1;
 
     position: relative;
-} 
+}
 
 .brand__title-wrp::before {
-  content: '';
-  width: 12px;
-  height: 92px;
-  background: var(--pink-text);
-  position: absolute;
-  margin: 0 0 0 -16px;
+    content: '';
+    width: 12px;
+    height: 92px;
+    background: var(--pink-text);
+    position: absolute;
+    margin: 0 0 0 -16px;
 }
 
 .brand__title {
@@ -202,6 +204,35 @@ label, input {
     margin: 30px 0 0 0;
 }
 
+.products__cart-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 95%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.products__cart-overlay {
+    position: relative;
+}
+
+.button__img-cart {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url();
+}
+
+
+.products__item:hover .button__img-cart,
+.products__item:hover .products__cart-overlay:before {
+    display: block;
+}
+
 .products__item-img {
     margin: 0 0 24px 0;
 }
@@ -244,10 +275,10 @@ label, input {
 
 .products__button:hover,
 .products__button:focus {
-  background-color: var(--pink-text);
-  color: #FFFFFF;
-  cursor: pointer;
-  outline: none;
+    background-color: var(--pink-text);
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
 }
 
 .advantages {
@@ -338,7 +369,7 @@ label, input {
     line-height: 30px;
     text-transform: uppercase;
     margin: 0 0 32px 0;
- 
+
 }
 
 .footer__subscribe-input {
@@ -360,7 +391,7 @@ label, input {
 }
 
 .footer__copyright {
-background-color: var(--black);
+    background-color: var(--black);
 }
 
 .footer__copyright-wrp {
