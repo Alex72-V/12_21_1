@@ -340,7 +340,7 @@ input {
 }
 
 .footer__subscribe-wrp {
-    width: 35%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,20 +380,36 @@ input {
 
 .footer__subscribe-input {
     min-height: 49px;
-    width: 65%;
     background: #E1E1E1;
     border-radius: 25px 0 0 25px;
-    border: none;
     padding: 0 0 0 22px;
+    display: block;
+    outline: 0px solid;
+    background: #E1E1E1;
+    box-sizing: border-box;
+    border: none;
+}
+
+.footer__subscribe-input:hover,
+.footer__subscribe-input:focus {
+    outline: 1px solid red;
+    background: white;
+    cursor: pointer;
 }
 
 .footer__subscribe-button {
     border-radius: 0 25px 25px 0;
     min-height: 50px;
-    width: 30%;
     background-color: var(--pink-text);
     border: none;
     color: #FFFFFF;
+}
+
+.footer__subscribe-button:hover,
+.footer__subscribe-button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
 }
 
 .footer__copyright {
@@ -420,4 +436,22 @@ input {
 
 .footer__copyright-item {
     margin: 0 7px 0 0;
+}
+
+.footer__copyright-item-img {
+    fill: white;
+}
+
+.footer__copyright-item-img:hover,
+.footer__copyright-item-img:focus {
+    fill: var(--pink-text);
+}
+
+.footer__copyright-item-bg {
+    fill: black;
+}
+
+.footer__copyright-item-bg:hover,
+.footer__copyright-item-bg:focus {
+    fill: white;
 }
