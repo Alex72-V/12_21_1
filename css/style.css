@@ -224,13 +224,19 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url();
+    background: none;
+    border: 2px solid #FFFFFF;
+    width: 138px;
+    min-height: 43px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
 }
 
 
 .products__item:hover .button__img-cart,
 .products__item:hover .products__cart-overlay:before {
-    display: block;
+    display: flex;
 }
 
 .products__item-img {
