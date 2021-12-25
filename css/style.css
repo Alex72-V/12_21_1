@@ -13,6 +13,12 @@ body {
     line-height: 17px;
 }
 
+label,
+input {
+    display: block;
+    display: flex;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -55,6 +61,7 @@ body {
     align-items: center;
 }
 
+
 .header__menu {
     display: none;
 }
@@ -84,6 +91,17 @@ body {
     padding: 0 0 0 92px;
     background-color: var(--pink-bkg);
     flex-grow: 1;
+
+    position: relative;
+}
+
+.brand__title-wrp::before {
+    content: '';
+    width: 12px;
+    height: 92px;
+    background: var(--pink-text);
+    position: absolute;
+    margin: 0 0 0 -16px;
 }
 
 .brand__title {
@@ -186,6 +204,35 @@ body {
     margin: 30px 0 0 0;
 }
 
+.products__cart-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 95%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.products__cart-overlay {
+    position: relative;
+}
+
+.button__img-cart {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url();
+}
+
+
+.products__item:hover .button__img-cart,
+.products__item:hover .products__cart-overlay:before {
+    display: block;
+}
+
 .products__item-img {
     margin: 0 0 24px 0;
 }
@@ -224,6 +271,14 @@ body {
     align-items: center;
     color: #F26376;
     margin: 48px 0 96px 0;
+}
+
+.products__button:hover,
+.products__button:focus {
+    background-color: var(--pink-text);
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
 }
 
 .advantages {
@@ -314,7 +369,7 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     margin: 0 0 32px 0;
- 
+
 }
 
 .footer__subscribe-input {
@@ -322,7 +377,6 @@ body {
     width: 65%;
     background: #E1E1E1;
     border-radius: 25px 0 0 25px;
-    margin: 0 -10px 0 0;
     border: none;
     padding: 0 0 0 22px;
 }
@@ -330,7 +384,6 @@ body {
 .footer__subscribe-button {
     border-radius: 0 25px 25px 0;
     min-height: 50px;
-    margin: 0 -5px 0 0;
     width: 30%;
     background-color: var(--pink-text);
     border: none;
@@ -338,7 +391,7 @@ body {
 }
 
 .footer__copyright {
-background-color: var(--black);
+    background-color: var(--black);
 }
 
 .footer__copyright-wrp {
