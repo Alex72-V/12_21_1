@@ -42,7 +42,7 @@ input {
 }
 
 .header__logo {
-    margin: 0 41px 0 0;
+    margin: 0 71px 0 0;
 }
 
 .header__button {
@@ -59,6 +59,35 @@ input {
     justify-content: space-between;
     min-height: 75px;
     align-items: center;
+}
+
+.header__wrp-logo-form {
+    display: flex;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 1px;
+    left: -42px;
+    background-image: url(../img/loupe.svg);
+    background-size: 30px 35px;
+}
+
+.header__search-input {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid black;
+}
+
+.header__search-input:hover {
+    outline: 1px solid red;
 }
 
 
@@ -454,4 +483,5 @@ input {
 .footer__copyright-item-bg:hover,
 .footer__copyright-item-bg:focus {
     fill: white;
+
 }
