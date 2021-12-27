@@ -113,19 +113,18 @@ input {
     position: relative;
 }
 
-
 .header__menu {
     position: absolute;
     width: 120px;
     top: 100%;
-    right: 80px;
+    right: 70px;
     background: white;
     z-index: 1;
     display: none;
 }
 
 .header__button:hover+.header__menu,
-.header__button:focus+.header__menu+.header__menu-list {
+.header__button:focus+.header__menu {
     display: block;
 }
 
@@ -135,6 +134,45 @@ input {
 
 .header__menu-list:hover {
     display: block;
+}
+
+.header__button-burger-background {
+    fill: black;
+}
+
+.header__button-burger-img {
+    fill: #E8E8E8;
+}
+
+.header__button {
+    padding: 0 2px;
+}
+
+/* .header__button:hover,
+.header__button:focus {
+    background: var(--pink-text);
+} */
+
+.header__button:hover .header__button-burger-img,
+.header__button:focus.header__button-burger-img {
+    fill: var(--pink-text);
+}
+
+.header__link-background {
+    padding: 2px 2px;
+}
+
+.header__link-img {
+    fill: #E8E8E8;
+}
+
+/* .header__link:focus .header__link-background,
+.header__link:hover .header__link-background {} */
+
+.header__link:focus .header__link-img,
+.header__link:hover .header__link-img {
+
+    fill: var(--pink-text);
 }
 
 .header__menu-item {
