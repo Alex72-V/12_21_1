@@ -615,6 +615,7 @@ input {
     background: #F8F3F4;
     display: flex;
     align-items: center;
+    margin: 0 0 64px 0;
 }
 
 .registration-title__title {
@@ -622,4 +623,71 @@ input {
     line-height: 29px;
     color: var(--pink-text);
     text-transform: uppercase;
+}
+
+.registration {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+
+.registration__page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__form {
+    width: 32%;
+}
+
+.registration__form-legend {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+
+}
+
+.registration__form-label {}
+
+
+.registration__form-input {
+    margin: 20px 0 0 0;
+    width: 90%;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0 0 0 17px;
+}
+
+
+.registration__form-radio {
+    display: flex;
+    margin: 31px 0 33px 0;
+    font-size: 11px;
+    line-height: 13px;
+    align-items: flex-end;
+}
+
+.registration__form-input-radio-label {
+    margin: 0 20px 0 0;
+}
+
+
+.registration__form-text {
+    margin: 16px 0 40px 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+
+}
+
+
+
+.registration__form-send {
+    margin: 0 0 96px 0;
+}
+
+.registration__loyalty {
+    width: 50%;
 }
