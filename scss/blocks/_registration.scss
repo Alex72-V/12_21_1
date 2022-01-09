@@ -1,0 +1,102 @@
+.registration-title {
+    min-height: 148px;
+    width: 100%;
+    background: #F8F3F4;
+    display: flex;
+    align-items: center;
+    margin: 0 0 64px 0;
+}
+
+.registration-title__title {
+    @include font(24px, 29px);
+    color: $pink-text;
+    text-transform: uppercase;
+}
+
+.registration {
+    @include font(13px, 16px, 300);
+
+}
+
+.registration__page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__form {
+    width: 32%;
+}
+
+.registration__form-legend {
+    @include font(16px, 19px);
+    color: #222222;
+
+}
+
+.registration__form-input {
+    margin: 20px 0 0 0;
+    width: 90%;
+    min-height: 45px;
+    @include font(13px, 16px);
+    padding: 0 0 0 17px;
+}
+
+.registration__form-input:hover,
+.registration__form-input:focus {
+    outline: 1px solid red;
+    background: white;
+    cursor: pointer;
+}
+
+
+.registration__form-radio {
+    display: flex;
+    margin: 31px 0 33px 0;
+    @include font(11px, 13px);
+    align-items: flex-end;
+}
+
+.registration__form-input-radio-label {
+    margin: 0 20px 0 0;
+}
+
+
+.registration__form-text {
+    margin: 16px 0 40px 0;
+    @include font(13px, 16px);
+    color: #B1B1B1;
+
+}
+
+
+
+.registration__form-send {
+    margin: 0 0 96px 0;
+}
+
+.registration__loyalty {
+    width: 50%;
+    @include font(24px, 29px);
+
+}
+
+.registration__loyalty-title {
+
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
+    font-weight: 300;
+}
+
+.registration__loyalty-text {
+    margin: 0 0 21px 0;
+}
+
+.registration__loyalty-list {
+
+    list-style-image: url(../img/marker.svg);
+
+}
+
+.registration__loyalty-item {
+    margin: 0 0 16px 0;
+}

@@ -1,0 +1,34 @@
+.advantages {
+    background-color: $black;
+}
+
+.advantages__list {
+    min-height: 341px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.advantages__img {
+    max-height: 40px;
+    margin: 0 0 26px 0;
+}
+
+.advantages__item-title {
+    @include font(20px, 24px);
+    color: #FBFBFB;
+    margin: 0 0 16px 0;
+}
+
+.advantages__item-text {
+    font-weight: 300;
+    text-align: center;
+    color: #FBFBFB;
+}

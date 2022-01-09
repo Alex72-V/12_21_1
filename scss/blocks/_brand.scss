@@ -1,0 +1,42 @@
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+
+}
+
+.brand__img {
+    max-width: 60%;
+}
+
+.brand__title-wrp {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+    background-color: $pink-bkg;
+    flex-grow: 1;
+    position: relative;
+}
+
+.brand__title-wrp::before {
+    content: '';
+    width: 12px;
+    height: 92px;
+    background: $pink-text;
+    position: absolute;
+    margin: 0 0 0 -16px;
+}
+
+.brand__title {
+    @include font(48px, 58px, 900);
+    color: $black;
+    text-transform: uppercase;
+}
+
+.brand__sub-title {
+    display: block;
+    @include font(32px, 38px);
+}
+
+.brand__sub-title-pink {
+    color: $pink-text;
+}
