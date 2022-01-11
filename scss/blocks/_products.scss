@@ -55,12 +55,19 @@
     justify-content: space-around;
     align-items: center;
     color: white;
+    fill: white;
 }
 
 
 .products__item:hover .products__button-img-cart,
 .products__item:hover .products__cart-overlay:before {
     display: flex;
+}
+
+.products__button-img-cart:hover {
+    background: $pink-text;
+    color: $black;
+    fill: $black;
 }
 
 .products__item-img {

@@ -4,6 +4,8 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 label,
@@ -26,6 +28,19 @@ input {
 }
 
 .container {
-    width: 1140px;
+    width: 72%;
     margin: 0 auto;
+}
+
+@media (max-width: $max-tablet-widht) {
+    .container {
+        width: 92%;
+    }
+}
+
+@media (max-width: $mobile-widht) {
+    .container {
+        width: 92%;
+    }
+
 }

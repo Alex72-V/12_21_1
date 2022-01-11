@@ -134,6 +134,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 label,
@@ -159,16 +161,38 @@ input {
 }
 
 .container {
-  width: 1140px;
+  width: 72%;
   margin: 0 auto;
+}
+
+@media (max-width: 1599px) {
+  .container {
+    width: 92%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 92%;
+  }
 }
 
 .header {
   background-color: #222222;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .header__logo {
   margin: 0 71px 0 0;
+  min-width: 44px;
+  min-height: 38px;
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    margin: 0 10% 0 0;
+  }
 }
 
 .header__button {
@@ -178,6 +202,24 @@ input {
 
 .header__link {
   margin: 0 0 0 33px;
+}
+
+@media (max-width: 767px) {
+  .header__link--person {
+    display: none;
+  }
+}
+
+@media (max-width: 1599px) {
+  .header__link--basket {
+    margin: 0 0 0 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__link--basket {
+    display: none;
+  }
 }
 
 .header__wrp {
@@ -206,12 +248,17 @@ input {
 .header__search:before {
   content: '';
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 1px;
+  width: 26px;
+  height: 26px;
   left: -42px;
   background-image: url(../img/loupe.svg);
-  background-size: 30px 35px;
+  margin: 6px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .header__search:before {
+    left: 0px;
+  }
 }
 
 .header__search:before:hover {
@@ -219,9 +266,17 @@ input {
 }
 
 .header__search-input {
+  width: 70%;
   padding: 10px 20px;
   border: none;
   outline: 1px solid black;
+}
+
+@media (max-width: 767px) {
+  .header__search-input {
+    width: 50%;
+    margin: 0 0 0 40px;
+  }
 }
 
 .header__search-input:hover {
@@ -357,7 +412,13 @@ input {
 }
 
 .brand__img {
-  max-width: 60%;
+  max-width: 50%;
+}
+
+@media (max-width: 767px) {
+  .brand__img {
+    display: none;
+  }
 }
 
 .brand__title-wrp {
@@ -373,6 +434,15 @@ input {
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .brand__title-wrp {
+    min-height: 363px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .brand__title-wrp::before {
@@ -393,12 +463,48 @@ input {
   text-transform: uppercase;
 }
 
+@media (max-width: 1599px) {
+  .brand__title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__title {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
 .brand__sub-title {
   display: block;
   font-size: 32px;
   line-height: 38px;
   font-weight: 400;
   font-style: normal;
+}
+
+@media (max-width: 1599px) {
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 .brand__sub-title-pink {
@@ -432,6 +538,25 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1599px) {
+  .sales__item {
+    width: 231px;
+    min-height: 168px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sales__item {
+    width: 100%;
+    min-height: 248px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 32px 0 0 0;
+  }
 }
 
 .sales__item--women {
@@ -469,6 +594,19 @@ input {
   width: 100%;
   min-height: 180px;
   margin: 30px 0 96px 0;
+}
+
+@media (max-width: 1599px) {
+  .sales__item--accesories {
+    min-height: 116px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sales__item--accesories {
+    width: 100%;
+    min-height: 111px;
+  }
 }
 
 .products {
@@ -552,6 +690,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  fill: white;
 }
 
 .products__item:hover .products__button-img-cart,
@@ -559,6 +698,12 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.products__button-img-cart:hover {
+  background: #F16D7F;
+  color: #222222;
+  fill: #222222;
 }
 
 .products__item-img {

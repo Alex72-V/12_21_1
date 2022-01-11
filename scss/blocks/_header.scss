@@ -1,9 +1,17 @@
 .header {
     background-color: $black;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .header__logo {
     margin: 0 71px 0 0;
+    min-width: 44px;
+    min-height: 38px;
+
+    @include mobile {
+        margin: 0 10% 0 0;
+    }
 }
 
 .header__button {
@@ -13,6 +21,22 @@
 
 .header__link {
     margin: 0 0 0 33px;
+}
+
+.header__link--person {
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__link--basket {
+    @include tablet-max {
+        margin: 0 0 0 42px;
+    }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .header__wrp {
@@ -33,12 +57,16 @@
 .header__search:before {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 1px;
+    width: 26px;
+    height: 26px;
     left: -42px;
     background-image: url(../img/loupe.svg);
-    background-size: 30px 35px;
+    margin: 6px 0 0 0;
+
+    // background-size: 26px 26px;
+    @include mobile {
+        left: 0px;
+    }
 }
 
 .header__search:before:hover {
@@ -46,9 +74,16 @@
 }
 
 .header__search-input {
+    width: 70%;
     padding: 10px 20px;
     border: none;
     outline: 1px solid black;
+
+    @include mobile {
+        width: 50%;
+        margin: 0 0 0 40px;
+    }
+
 }
 
 .header__search-input:hover {

@@ -5,7 +5,11 @@
 }
 
 .brand__img {
-    max-width: 60%;
+    max-width: 50%;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .brand__title-wrp {
@@ -15,6 +19,11 @@
     background-color: $pink-bkg;
     flex-grow: 1;
     position: relative;
+
+    @include mobile {
+        min-height: 363px;
+        justify-content: center;
+    }
 }
 
 .brand__title-wrp::before {
@@ -30,11 +39,27 @@
     @include font(48px, 58px, 900);
     color: $black;
     text-transform: uppercase;
+
+    @include tablet-max {
+        @include font(44px, 53px, 900);
+    }
+
+    @include mobile {
+        @include font(38px, 45px, 900);
+    }
 }
 
 .brand__sub-title {
     display: block;
     @include font(32px, 38px);
+
+    @include tablet-max {
+        @include font(24px, 29px, 700);
+    }
+
+    @include mobile {
+        @include font(20px, 24px, 700);
+    }
 }
 
 .brand__sub-title-pink {
