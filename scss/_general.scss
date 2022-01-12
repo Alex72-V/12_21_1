@@ -34,7 +34,8 @@ input {
 
 @media (max-width: $max-tablet-widht) {
     .container {
-        width: 92%;
+        width: 96%;
+        max-width: 1140px;
     }
 }
 
