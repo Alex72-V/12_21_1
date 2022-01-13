@@ -15,16 +15,18 @@
 
 
     @include tablet-max {
-        min-height: 693px;
+        max-height: 693px;
         flex-direction: column;
+        justify-content: start;
         padding: 54px 23% 140px;
 
     }
 
     @include mobile {
-        min-height: 550px;
+        max-height: 550px;
         flex-direction: column;
-        padding: 54px 10% 140px;
+        justify-content: start;
+        padding: 54px 10% 110px;
 
     }
 
@@ -38,9 +40,12 @@
 
     @include tablet-max {
         width: 100%;
+        margin: 48px 0 0 0;
     }
 
-    @include mobile {}
+    @include mobile {
+        margin: 59px 0 0 0;
+    }
 
     .footer-subscribe__img {
         width: 120px;
@@ -51,6 +56,10 @@
     @include font(20px, 24px);
     text-align: center;
     margin: 24px 0 0 0;
+
+    @include mobile {
+        @include font(18px, 22px);
+    }
 }
 
 .footer-subscribe__img-text__italic {
@@ -68,6 +77,21 @@
     text-transform: uppercase;
     margin: 0 0 32px 0;
 
+
+    @include tablet-max {
+        margin: 0 0 27px 0;
+    }
+
+
+    @include mobile {
+        @include font(14px, 22px);
+        margin: 0 0 22px 0;
+
+    }
+}
+
+.footer-subscribe__input-field {
+    display: flex;
 }
 
 .footer-subscribe__input {

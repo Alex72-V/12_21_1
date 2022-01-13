@@ -7,6 +7,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        min-height: 143px;
+        padding: 43px 0 9px 0;
+    }
 }
 
 .footer-copyright__text {
@@ -17,6 +24,10 @@
 .footer-copyright__list {
     display: flex;
     justify-content: space-around;
+
+    @include mobile {
+        width: 30%;
+    }
 }
 
 .footer-copyright__item {

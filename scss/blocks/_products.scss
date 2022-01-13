@@ -38,7 +38,7 @@
 
     @include tablet-max {
         width: 49%;
-        margin: 16px 0 0 0;
+        margin: 15px 0 0 0;
     }
 
     @include mobile {
@@ -95,7 +95,7 @@
 }
 
 .products__item-wrp {
-    padding: 0 18px;
+    padding: 0 18px 20px;
 }
 
 .products__item-title {
