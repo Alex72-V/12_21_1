@@ -19,7 +19,6 @@
 .brand__title-wrp {
     display: flex;
     align-items: center;
-    // padding: 0 0 0 92px;
     background-color: $pink-bkg;
     flex-grow: 1;
     position: relative;
@@ -36,7 +35,6 @@
     width: 12px;
     height: 92px;
     background: $pink-text;
-    // position: absolute;
     margin: 0 0 0 8%;
 
     @include mobile {

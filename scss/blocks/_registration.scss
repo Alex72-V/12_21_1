@@ -21,10 +21,22 @@
 .registration__page {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .registration__form {
-    width: 32%;
+    width: 36%;
+
+    @include tablet-max {
+        width: 48%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .registration__form-legend {
@@ -39,6 +51,14 @@
     min-height: 45px;
     @include font(13px, 16px);
     padding: 0 0 0 17px;
+
+    @include tablet-max {
+        width: 70%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .registration__form-input:hover,
@@ -65,18 +85,60 @@
     margin: 16px 0 40px 0;
     @include font(13px, 16px);
     color: #B1B1B1;
+    width: 90%;
+
+    @include tablet-max {
+        width: 70%;
+    }
+
+    @include mobile {
+        width: 100%;
+
+    }
 
 }
 
-
-
 .registration__form-send {
+    width: 167px;
+    min-height: 50px;
+    @include font(16px, 19px);
+    border: 1px solid #FF6A6A;
+    background-color: #fff;
+    box-sizing: border-box;
+    align-items: center;
+    text-transform: uppercase;
+    color: #F26376;
     margin: 0 0 96px 0;
+
+    @include tablet-max {}
+
+    @include mobile {
+        margin: 42px 0 96px 0;
+    }
+}
+
+.registration__form-send:hover,
+.registration__form-send:focus {
+    background-color: $pink-text;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+}
+
+.registration__form-send::after {
+    content: '\2192';
+    margin: 0 0 0 20px;
+    font-size: 25px;
 }
 
 .registration__loyalty {
     width: 50%;
-    @include font(24px, 29px);
+    @include font(24px, 29px, 300);
+
+    @include mobile {
+        width: 100%;
+
+    }
 
 }
 
@@ -84,7 +146,16 @@
 
     text-transform: uppercase;
     margin: 0 0 22px 0;
-    font-weight: 300;
+    @include font(24px, 29px, 300);
+
+    @include tablet-max {
+        margin: 0 0 32px 0;
+    }
+
+    @include mobile {
+        margin: 40px 0 32px 0;
+
+    }
 }
 
 .registration__loyalty-text {
@@ -92,11 +163,11 @@
 }
 
 .registration__loyalty-list {
-
     list-style-image: url(../img/marker.svg);
-
+    margin: 0 0 0 30px;
 }
 
 .registration__loyalty-item {
+    padding: 0 0 0 23px;
     margin: 0 0 16px 0;
 }
