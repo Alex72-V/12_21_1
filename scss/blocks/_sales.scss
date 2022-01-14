@@ -38,12 +38,14 @@
     @include font(16px, 19px);
     color: #FFFFFF;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .sales__item-title {
     @include font(24px, 29px, 700);
     color: $pink-text;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .sales__item--men {
