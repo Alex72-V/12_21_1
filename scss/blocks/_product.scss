@@ -1,0 +1,46 @@
+.product-title {
+    background-color: #F8F3F4;
+}
+
+.product-title__breadcrumb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 148px;
+
+}
+
+
+
+.product-title__title {
+    color: $pink-text;
+    @include font(24px, 29px, 400);
+    text-transform: uppercase;
+}
+
+.product-title__breadcrumb-item-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #636363;
+    @include font(14px, 17px, 700);
+}
+
+.product-title__breadcrumb-item--page {
+    color: $pink-text;
+    text-transform: uppercase;
+    @include font(14px, 17px, 700);
+}
+
+.product__carousel {
+    min-height: 777px;
+}
+
+
+.carousel-control-prev-icon:hover,
+.carousel-control-prev-icon:focus,
+.carousel-control-next-icon:hover,
+.carousel-control-next-icon:focus,
+.arrow:focus,
+.arrow:hover {
+    fill: $pink-text;
+}

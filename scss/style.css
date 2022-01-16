@@ -368,7 +368,7 @@ input {
   top: 100%;
   right: 30px;
   background: white;
-  z-index: 1;
+  z-index: 5;
   display: none;
   padding: 37px 0 0 34px;
 }
@@ -1064,7 +1064,7 @@ input {
   }
 }
 
-.footer-subscribe__img-text__italic {
+.footer-subscribe__img-text--italic {
   font-style: italic;
 }
 
@@ -1446,5 +1446,63 @@ input {
 .registration__loyalty-item {
   padding: 0 0 0 23px;
   margin: 0 0 16px 0;
+}
+
+.product-title {
+  background-color: #F8F3F4;
+}
+
+.product-title__breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 148px;
+}
+
+.product-title__title {
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.product-title__breadcrumb-item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #636363;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.product-title__breadcrumb-item--page {
+  color: #F16D7F;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.product__carousel {
+  min-height: 777px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-prev-icon:focus,
+.carousel-control-next-icon:hover,
+.carousel-control-next-icon:focus,
+.arrow:focus,
+.arrow:hover {
+  fill: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
