@@ -14,6 +14,19 @@
     }
 }
 
+.header__link-logo {
+    margin: 0px 71px 0 0;
+
+    @include mobile {
+        margin: 0px 32px 0 0;
+    }
+}
+
+.header__logo-img:hover,
+.header__logo-img:focus {
+    opacity: 0.6;
+}
+
 .header__button {
     background-color: transparent;
     border: 0;

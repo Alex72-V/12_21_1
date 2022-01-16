@@ -231,6 +231,21 @@ input {
   }
 }
 
+.header__link-logo {
+  margin: 0px 71px 0 0;
+}
+
+@media (max-width: 767px) {
+  .header__link-logo {
+    margin: 0px 32px 0 0;
+  }
+}
+
+.header__logo-img:hover,
+.header__logo-img:focus {
+  opacity: 0.6;
+}
+
 .header__button {
   background-color: transparent;
   border: 0;
@@ -1365,7 +1380,7 @@ input {
 
 @media (max-width: 767px) {
   .registration__form-send {
-    margin: 42px 0 96px 0;
+    margin: 39px 0 40px 0;
   }
 }
 
@@ -1394,6 +1409,7 @@ input {
 @media (max-width: 767px) {
   .registration__loyalty {
     width: 100%;
+    margin: 0 0 100px;
   }
 }
 

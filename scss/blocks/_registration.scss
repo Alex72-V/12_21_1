@@ -110,10 +110,9 @@
     color: #F26376;
     margin: 0 0 96px 0;
 
-    @include tablet-max {}
 
     @include mobile {
-        margin: 42px 0 96px 0;
+        margin: 39px 0 40px 0;
     }
 }
 
@@ -137,7 +136,7 @@
 
     @include mobile {
         width: 100%;
-
+        margin: 0 0 100px;
     }
 
 }
