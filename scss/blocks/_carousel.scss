@@ -1,0 +1,13 @@
+.carousel {
+    min-height: 777px;
+}
+
+
+.carousel-control-prev-icon:hover,
+.carousel-control-prev-icon:focus,
+.carousel-control-next-icon:hover,
+.carousel-control-next-icon:focus,
+.arrow:focus,
+.arrow:hover {
+    fill: $pink-text;
+}
