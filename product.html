@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <link rel="stylesheet" href="./cdn/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <!-- <link rel="stylesheet" href="./cdn/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./scss/style.css">  
 </head>
 
 <body>
@@ -173,7 +172,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb product-title__breadcrumb-list">
                             <li class="breadcrumb-item product-title__breadcrumb-item">
-                            <a class="product-title__breadcrumb-item-link" href="/index.html">
+                            <a class="product-title__breadcrumb-item-link" href="index.html">
                                 Home
                             </a>
                             </li>
@@ -184,7 +183,7 @@
                             </li>
                             <li class="breadcrumb-item active product-title__breadcrumb-item " aria-current="page"> <span class="product-title__breadcrumb-item--page">
                             new arrivals
-                        </span>
+                            </span>
                             </li>
                         </ol>
                     </nav>
@@ -193,17 +192,16 @@
         </section>
 
         <section class="carousel">
-
+            <h3 class="visually-hidden">
+                carousel product
+                </h3>
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                     <img src="./img/prod_carousel_1.jpg" class="d-block w-100" alt="product viev 1">
                     </div>
                     <div class="carousel-item">
-                    <img src="./img/prod_carousel_1.jpg" class="d-block w-100" alt="product viev 2">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./img/prod_carousel_1.jpg" class="d-block w-100" alt="product viev 3">
+                    <img src="./img/prod_carousel_2.jpg" class="d-block w-100" alt="product viev 2">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -215,7 +213,8 @@
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"><svg width="47" height="47" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <svg width="47" height="47" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg">
                         <path d="M47 0H0V47H47V0Z" fill="#2A2A2A" fill-opacity="0.15"/>
                         <path class="arrow" d="M17.2998 31.2499L25.0498 23.4999L17.2998 15.7499L18.8498 12.6499L29.6998 23.4999L18.8498 34.3499L17.2998 31.2499Z" />
                         </svg>
@@ -231,20 +230,51 @@
                     <h2 class="product-description__block-title">
                         women collection
                     </h2>
-                    <div class="product-description__block-wrp"></div>
                     <h3 class="product-description__block-sub-title">moschino cheap and chic</h3>
                     <p class="product-description__block-text">
                         Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. 
                     </p>
                     <p class="product-description__block-price">$561</p>
-                    <div class="product-description__block-price-line">
-                        <svg width="642" height="2" viewBox="0 0 642 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.5 1.49829H641.5H0.5Z" stroke="#EAEAEA" stroke-linejoin="round"/>
-                            </svg>
-                    </div>
+                    
                 </div>
-            </div>  
-        </section>
+            </div> 
+            <div class="products__button-dropdown">
+                <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+                
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+                
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
     
     </main>
     <footer>
