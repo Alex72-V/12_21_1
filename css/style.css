@@ -1718,12 +1718,6 @@ input {
   fill: #F16D7F;
 }
 
-.product-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .product-description__pre-block {
   position: relative;
   margin: -62px 0 0 0;
