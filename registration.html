@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
 </head>
 
@@ -179,13 +178,14 @@
                         </legend>
                         <div class="registration__form-wrp">
                             <label class="registration__form-label">
-                                <input class="registration__form-input" type="text" placeholder="First Name">
+                                <input class="registration__form-input" type="text" 
+                                pattern="[A-Za-zА-Яа-яЁё]{3,20}" placeholder="First Name">
                                 <span class="visually-hidden">
                                     first name 
                                 </span>
                             </label>
                             <label class="registration__form-label">
-                            <input class="registration__form-input"  type="text" placeholder="Second Name">
+                            <input class="registration__form-input" type="text" pattern="[A-Za-zА-Яа-яЁё]{3,20}" placeholder="Second Name">
                             <label class="visually-hidden"  for="last-name">
                             last-name
                             </label>
